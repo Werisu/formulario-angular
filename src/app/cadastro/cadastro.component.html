@@ -54,13 +54,14 @@
 
     <div class="formulario__campo">
       <label class="campo__etiqueta" for="cep">CEP</label>
-      <input name="cep" id="cep" class="campo__escrita" ngModel require #cep="ngModel" pattern="^(\d{5})(-?\d{3})$"
+      <input name="cep" id="cep" class="campo__escrita" ngModel require validadorCep #cep="ngModel" pattern="^(\d{5})(-?\d{3})$"
         minlength="8" maxlength="9" (blur)="consultaCEP($event, f)" />
       <div id="erro"></div>
       <div *ngIf="(cep?.invalid && cep?.touched) || cep?.dirty">
         <app-mensagem *ngIf="cep?.errors?.['required']" mensagem="O campo de cep deve ser preenchido"></app-mensagem>
         <app-mensagem *ngIf="cep?.errors?.['pattern']"
           mensagem="Digite um cep válido, exemplo: 00000-00"></app-mensagem>
+        <app-mensagem *ngIf="cep?.errors?.['validadorCep']" mensagem="O CEP informado não existe"></app-mensagem>
       </div>
     </div>
 

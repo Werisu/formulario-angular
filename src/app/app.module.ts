@@ -1,3 +1,4 @@
+import { ValidandoCepDirective } from './directives/validando-cep.directive';
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
@@ -21,6 +22,7 @@ import { HttpClientModule } from "@angular/common/http";
     SucessoCadastroComponent,
     MensagemComponent,
     MaiorIdadeDirective,
+    ValidandoCepDirective
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
