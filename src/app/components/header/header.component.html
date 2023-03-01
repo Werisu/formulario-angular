@@ -1,10 +1,10 @@
 <header class="cabeçalho">
-  <div class="container">
+  <div class="container__book">
       <input type="checkbox" id="menu" class="container__botao">
       <label for="menu" class="container__rotulo">
           <span class="cabeçalho__menu-hamburguer container__imagem"></span>
       </label>
-      <ul class="lista-menu">
+      <ul class="lista-menu-1">
           <li class="lista-menu__titulo">Categorias</li>
           <li class="lista-menu__item">
               <a href="#" class="lista-menu__link">Programação</a>
@@ -33,14 +33,14 @@
       <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
   </ul>
 
-  <div class="container">
+  <div class="container__book">
       <a href="#"><img src="/assets/img/Favoritos.svg" alt="Meus favoritos"
               class="container__imagem container__imagem-transparente"></a>
       <a href="#" class="container__link">
           <img src="/assets/img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
           <p class="container__texto">Minha sacola</p>
       </a>
-      <a [routerLink]="['/cadastro']" routerLinkActive="router-link-active"  class="container__link">
+      <a [routerLink]="['/login']" routerLinkActive="router-link-active"  class="container__link">
           <img src="/assets/img/Usuario.svg" alt="Meu perfil" class="container__imagem">
           <p class="container__texto">Meu perfil</p>
       </a>

@@ -12,6 +12,7 @@ import { FormsModule } from "@angular/forms";
 import { MensagemComponent } from "./components/mensagem/mensagem.component";
 import { MaiorIdadeDirective } from "./directives/maior-idade.directive";
 import { HttpClientModule } from "@angular/common/http";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from "@angular/common/http";
     SucessoCadastroComponent,
     MensagemComponent,
     MaiorIdadeDirective,
-    ValidandoCepDirective
+    ValidandoCepDirective,
+    LoginComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
