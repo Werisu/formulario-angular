@@ -1,3 +1,11 @@
+O projeto AluraBooks
+====================
+Uma aplicação em Angular que possui uma tela de cadastro dividida em duas seções: dados pessoais e endereço. A medida que preenchemos os campos, as validações são aplicadas através do módulo FormsModule, que nos fornece recursos para construir formulários orientados a templates no HTML.
+
+Ao inserir um CEP válido, o campo de endereço é preenchido automaticamente através de uma API. Quando todos os campos estiverem preenchidos corretamente, é possível enviar o formulário e, em caso de sucesso, é exibida uma nova tela de confirmação.
+
+Este projeto tem como objetivo demonstrar o uso de formulários e validações em Angular, além de exemplificar a integração com APIs externas.
+
 # FormsReativos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
